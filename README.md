@@ -16,7 +16,9 @@
 3. 运行脚本
 
 > 仓库里已经写好了相关的脚本
+>
 > Windows 只需要运行 `create_venv_windows.bat` 和 `open_venv_terminal_windows.bat` 即可
+>
 > Linux 只需要运行 `create_venv_linux.sh` 和 `open_venv_terminal_linux.sh` 即可
 
 ## 致谢
