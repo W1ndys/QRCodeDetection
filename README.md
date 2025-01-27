@@ -2,7 +2,7 @@
 
 高精度扫描二维码，检测图片中是否包含二维码
 
-使用 opencv 的 wechat_qrcode 库，精度较高，可以检测小尺寸二维码
+使用基于 OpenCV 的 WeChatQRCode 库，精度较高，可以检测小尺寸二维码
 
 ## 环境
 
