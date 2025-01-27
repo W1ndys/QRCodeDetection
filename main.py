@@ -16,7 +16,7 @@ def detect_qr_code(image_path):
     try:
         # 创建微信二维码检测器
         model_base_path = "models"  # 确保这个目录存在并包含所需模型文件
-        detector = cv2.wechat_qrcode_WeChatQRCode(
+        detector = cv2.wechat_qrcode.WeChatQRCode(
             os.path.join(model_base_path, "detect.prototxt"),
             os.path.join(model_base_path, "detect.caffemodel"),
             os.path.join(model_base_path, "sr.prototxt"),
