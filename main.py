@@ -116,17 +116,3 @@ if __name__ == "__main__":
                     print(f"二维码数据: {qr.data.decode('utf-8')}")
             else:
                 print(f"在 {image_file} 中未检测到二维码。")
-
-    model_files = [
-        "detect.prototxt",
-        "detect.caffemodel",
-        "sr.prototxt",
-        "sr.caffemodel",
-    ]
-
-    for file in model_files:
-        path = os.path.join("models", file)
-        if os.path.exists(path):
-            print(f"✓ {file} 已找到")
-        else:
-            print(f"✗ {file} 未找到")
