@@ -150,11 +150,10 @@ def detect_qr_code(image_path):
                 # 保存结果图片
                 output_path = os.path.join("output", os.path.basename(image_path))
                 try:
-                    success = cv2.imwrite(output_path, image)
-                    if success:
-                        print(f"结果图片已保存到: {output_path}")
-                    else:
-                        print(f"保存图片失败: {output_path}")
+                    # 使用imencode和fromfile来支持中文路径
+                    _, img_encoded = cv2.imencode(".jpg", image)
+                    img_encoded.tofile(output_path)
+                    print(f"结果图片已保存到: {output_path}")
                 except Exception as e:
                     print(f"保存图片时发生错误: {str(e)}")
 
